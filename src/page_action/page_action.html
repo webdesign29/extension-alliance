@@ -1,36 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
-<script src="jquery.js"></script>
-<script src="docxtemplater.js"></script>
-<script src="jszip.js"></script>
-<script src="file-saver.min.js"></script>
-<script src="jszip-utils.js"></script>
-<script src="extension-logic.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery.js"></script>
+    <script src="js/docxtemplater.js"></script>
+    <script src="js/jszip.js"></script>
+    <script src="js/file-saver.min.js"></script>
+    <script src="js/jszip-utils.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-<style type="text/css">
-	#mainPopup {
-		padding: 10px;
-		height: 200px;
-		width: 400px;
-		font-family: Helvetica, Ubuntu, Arial, sans-serif;
-	}
-	h1 {
-		font-size: 2em;
-	}
-	.extension-popup ul {
-		list-style: none;
-		list-style-position: inside;
-		padding: 0;
-	}
-</style>
+<body id="mainPopup">
+    <div class="extension-popup">
+        <h1 class="popup-title">Alliance Courtage</h1>
+        <div class="popup-body">
+            <h2>Assur Prox</h2>
+            <div class="list-actions">
+                <ul>
+                    <li><a class="btn btn-primary extract-fiche">Extraire la fiche client</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
 
-<div class="extension-popup" id="mainPopup">
-	<ul>
-		<li>
-			<h2>Assur Prox</h2>
-			<ul>
-				<li><button class="extract-fiche">Extraire la fiche client</button></li>
-			</ul>
-		</li>
-	</ul>
-</div>
+</html>

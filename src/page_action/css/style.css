@@ -1,0 +1,75 @@
+body {
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 15px;
+    color: #fff;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    outline: none;
+    -webkit-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s;
+}
+
+.btn-primary {
+    border: 1px solid #2f71a1;
+    background-color: #2f71a1;
+}
+
+.btn:hover {
+    background-color: #0A4C79;
+    border: 1px solid #0A4C79;
+}
+
+.btn:active {
+    color: #333;
+    background-color: #D1D1D1;
+    border: 1px solid #0A4C79;
+}
+
+.extension-popup {
+    width: 250px;
+    font-family: Helvetica, Ubuntu, Arial, sans-serif;
+}
+
+.popup-title {
+    margin: 0;
+    font-size: 1.3rem;
+    background: #2f71a1;
+    padding: 0.5rem;
+    color: #fff;
+    border-bottom: 1px solid #000000;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.51);
+}
+
+.popup-body {
+    margin: 0;
+    font-size: 1rem;
+    background: #eee;
+    padding: 1rem;
+}
+
+.popup-body h2 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.extension-popup ul {
+    list-style: none;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+.list-actions {
+    padding: 1rem;
+}
