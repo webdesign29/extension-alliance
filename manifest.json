@@ -1,0 +1,45 @@
+{
+  "name": "Alliance Courtage",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Extracteur de donné",
+  "homepage_url": "https://www.alliancecourtage.com/",
+  "icons": {
+    "16": "icons/favicon.png",
+    "48": "icons/favicon.png",
+    "128": "icons/favicon.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": false
+  },
+  "options_page": "src/options_custom/index.html",
+  "page_action": {
+    "default_icon": "icons/favicon.png",
+    "default_title": "page action demo",
+    "default_popup": "src/page_action/page_action.html"
+  },
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": [
+        "src/inject/inject.css"
+      ]
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}

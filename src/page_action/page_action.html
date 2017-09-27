@@ -1,0 +1,36 @@
+<!doctype html>
+
+<script src="jquery.js"></script>
+<script src="docxtemplater.js"></script>
+<script src="jszip.js"></script>
+<script src="file-saver.min.js"></script>
+<script src="jszip-utils.js"></script>
+<script src="extension-logic.js"></script>
+
+<style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 200px;
+		width: 400px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	.extension-popup ul {
+		list-style: none;
+		list-style-position: inside;
+		padding: 0;
+	}
+</style>
+
+<div class="extension-popup" id="mainPopup">
+	<ul>
+		<li>
+			<h2>Assur Prox</h2>
+			<ul>
+				<li><button class="extract-fiche">Extraire la fiche client</button></li>
+			</ul>
+		</li>
+	</ul>
+</div>
